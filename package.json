@@ -1,5 +1,5 @@
 {
-  "name": "binary-jump",
+  "name": "binaryjump",
   "displayName": "Binary Jump",
   "version": "1.0.0",
   "description": "Extension for Visual Studio Code that helps you jump at center of your current position to the start/end of line based on direction you choose to jump.",
@@ -11,7 +11,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:binaryJump.onInstall"
+    "*"
   ],
   "contributes": {
     "commands": [
