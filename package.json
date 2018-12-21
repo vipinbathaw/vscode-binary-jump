@@ -27,14 +27,14 @@
     "keybindings": [
       {
         "command": "binaryJump.binaryLeftJump",
-        "key": "ctrl+shift+q ctrl+shift+left",
-        "mac": "cmd+shift+q cmd+shift+left",
+        "key": "ctrl+meta+alt+left",
+        "mac": "ctrl+cmd+alt+left",
         "when": "editorTextFocus"
       },
       {
         "command": "binaryJump.binaryRightJump",
-        "key": "ctrl+shift+q ctrl+shift+right",
-        "mac": "cmd+shift+q cmd+shift+right",
+        "key": "ctrl+meta+alt+right",
+        "mac": "ctrl+cmd+alt+right",
         "when": "editorTextFocus"
       }
     ]
