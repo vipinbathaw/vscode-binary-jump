@@ -52,5 +52,9 @@
     "@types/mocha": "^2.2.42"
   },
   "author": "Vipin Bathaw",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vipinbathaw/binary-jump.git"
+  }
 }
