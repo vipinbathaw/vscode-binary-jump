@@ -3,7 +3,7 @@
   "displayName": "Binary Jump",
   "publisher": "vipinbathaw",
   "version": "0.1.0",
-  "description": "Extension for Visual Studio Code that helps you jump at center of your current position to the start/end of line based on direction you choose to jump.",
+  "description": "Binary Jump is a VS Code extension that helps in faster code navigation by allowing you to jump half the distance from current cursor to either direction.",
   "main": "./extension",
   "engines": {
     "vscode": "^1.30.0"
