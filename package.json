@@ -55,6 +55,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vipinbathaw/binary-jump.git"
+    "url": "https://github.com/vipinbathaw/vscode-binary-jump.git"
+  },
+  "icon": "img/logo.png",
+  "galleryBanner": {
+    "color": "#21272e",
+    "theme": "dark"
   }
 }
