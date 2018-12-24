@@ -1,4 +1,4 @@
-# Binary Jump
+# Binary Jump extension for Visual Studio Code
 Binary Jump is a VS Code extension that helps in faster code navigation by allowing you to jump half the distance from current cursor to either direction.
 
 ## How it work
