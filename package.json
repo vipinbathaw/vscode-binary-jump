@@ -2,7 +2,7 @@
   "name": "binaryjump",
   "displayName": "Binary Jump",
   "publisher": "vipinbathaw",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "Binary Jump is a VS Code extension that helps in faster code navigation by allowing you to jump half the distance from current cursor to either direction.",
   "main": "./extension",
   "engines": {
