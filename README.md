@@ -16,6 +16,18 @@ Below are the shortcut keys to use this extension.
 | `ctrl+alt+meta+right` | Windows or Unix |
 | `ctrl+cmd+alt+right` | Mac |
 
+#### Up Jump
+| Shortcut Keys | Platform |
+| ------------- | -------- |
+| `ctrl+alt+meta+up` | Windows or Unix |
+| `ctrl+cmd+alt+up` | Mac |
+
+#### Down Jump
+| Shortcut Keys | Platform |
+| ------------- | -------- |
+| `ctrl+alt+meta+down` | Windows or Unix |
+| `ctrl+cmd+alt+down` | Mac |
+
 `meta` key is same as the window sign key on your keyboard.
 To help understand better how it works and how it is useful, let's see it in action.
 

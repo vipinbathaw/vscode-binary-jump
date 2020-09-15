@@ -2,6 +2,7 @@
 const vscode = require('vscode');
 
 // The position before any calls to binaryjump are made, cleard when user moves cursor
+// Needed for chaining commands
 let lastPosition = null;
 let lastDirection = null;
 let positionStart = null;
@@ -24,11 +25,13 @@ doJump = direction => {
     // make sure there is no selection
     if (!editor.selection.isEmpty) return;
 
-    // make sure there is no selection
+    // make sure there is a range
     if (editor.visibleRanges.length === 0) return;
 
     const isVerticalMovement = d => d === 'up' || d === 'down';
     const isHorizontalMovement = d => d === 'left' || d === 'right';
+
+    // chech if 2 directions are both vertical or both horiaontal
     const isSameOrientation = (d1, d2) =>
         (isVerticalMovement(d1) && isVerticalMovement(d2)) || (isHorizontalMovement(d1) && isHorizontalMovement(d2));
 
@@ -50,7 +53,7 @@ doJump = direction => {
     const startLine = position.with(position.line, whiteSpaceLength);
     const endLine = position.with(position.line, lineText.length);
 
-    //  If lastPosition is null this means the user made some inputs, now begin a new jumping sequence
+    //  If lastPosition is null this means the user made some inputs, now begin a new jumping chain
     if (lastPosition === null) {
         if (isHorizontalMovement(direction)) {
             positionStart = startLine;

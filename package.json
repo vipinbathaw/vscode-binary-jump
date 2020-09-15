@@ -45,6 +45,18 @@
                 "key": "ctrl+meta+alt+right",
                 "mac": "ctrl+cmd+alt+right",
                 "when": "editorTextFocus"
+            },
+            {
+                "command": "binaryJump.binaryUpJump",
+                "key": "ctrl+meta+alt+up",
+                "mac": "ctrl+cmd+alt+up",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "binaryJump.binaryDownJump",
+                "key": "ctrl+meta+alt+down",
+                "mac": "ctrl+cmd+alt+down",
+                "when": "editorTextFocus"
             }
         ]
     },
