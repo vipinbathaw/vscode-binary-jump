@@ -4,7 +4,7 @@ const vscode = require('vscode');
 // The position before any calls to binaryjump are made, cleard when user moves cursor
 // Needed for chaining commands
 let lastPosition = null;
-let firstPosition = null; // first position before  jump chain began
+let firstPosition = null; // first position before jump chain began
 let lastDirection = null;
 let positionStart = null;
 let positionEnd = null;
@@ -103,10 +103,12 @@ doJump = direction => {
 
     if (newPosition != null) {
         // accuratly asses new possition, character might change
-        newPosition = newPosition.with(
-            newPosition.line,
-            Math.min(firstPosition.character, editor.document.lineAt(newPosition.line).text.length)
-        );
+        // use firstPosition to maintain character position over chain
+        if (isVerticalMovement(direction))
+            newPosition = newPosition.with(
+                newPosition.line,
+                Math.min(firstPosition.character, editor.document.lineAt(newPosition.line).text.length)
+            );
 
         // create new selection for updating
         var newSelection = new vscode.Selection(newPosition, newPosition);
