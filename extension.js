@@ -4,7 +4,7 @@ const vscode = require('vscode');
 // The position before any calls to binaryjump are made, cleard when user moves cursor
 // Needed for chaining commands
 let lastPosition = null;
-let firstPosition = null; // first position before jump chain began
+let firstPosition = null; // first position before jump chain began, set when jump chain begins
 let lastDirection = null;
 let positionStart = null;
 let positionEnd = null;
